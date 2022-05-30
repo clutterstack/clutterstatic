@@ -1,0 +1,31 @@
+created: 20220529215717246
+modified: 20220530020808560
+tags: 
+title: What if I export this wiki with the StaticRiver exporter right now?
+type: text/vnd.tiddlywiki
+
+I can do that from the Tools sidebar tab ("export all"). I choose the Static HTML option from the dropdown and get a file called `tiddlers(4).html` in my downloads folder (because I already had `tiddlers.html` and `tiddlers(1)` through `(3)` `.html` in there.
+
+For posterity, here's what this wiki looks like today:
+
+[img[screenshot of the working TiddlyWiki|2022-05-29-tw-screenshot.png]]
+
+And what the static export looks like:
+
+[img[screenshot of the static export|2022-05-29-static-screenshot.png]]
+
+OK, that's a bit confusing, because it has the other screenshot in it. And //that's// because all the non-[[system|https://tiddlywiki.com/#SystemTiddlers]] tiddlers were included, and not in any particular order. (Spoiler: Changing this will be a matter of feeding our desired list of tiddlers to the `exportButton` macro.) 
+
+That screenshot is almost useless, but fixing it is a kind of recursive problem, so I'll just describe what it shows. The sidebar isn't rendered. This is good, because almost all of what's normally in the sidebar is useless in a static site. It's bad, because actually the site title and tagline live in the sidebar, normally.
+
+But this is a pretty simplistic export that reuses the wiki's existing templates and css, and it's not bad! The toolbar buttons, useless in a static site, are gone (my custom building-blocks button is showing, which indicates I put that there in some non-standard way in a plugin--just ignore that for now).
+
+Aside: There are two settings for sidebar width in the Vanilla theme that can be toggled in the Control Panel under Appearance/Theme Tweaks; I'm using "Fluid story, fixed sidebar". "Fixed story, fluid sidebar" would have resulted in a narrower "story river" (where the main content lives) clinging to the lhs of the window and an empty space to the right.
+
+We'd probably want to add stuff like a header with a site title, likely a sidebar with appropriate nav...but the core of what a blog needs is pretty much there: a stream with titled, dated entries.
+
+There are links! But in a TiddlyWiki, links often point to tiddlers, and this exporter doesn't build or know about any other pages, so some of them don't work. If we want them to, and obviously we will, we'll have to find or build the mechanism.
+
+So, how did it arrive at this output?
+
+[[How did "export all" work?]]

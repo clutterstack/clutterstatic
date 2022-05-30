@@ -1,0 +1,11 @@
+created: 20220529191736487
+key: ((omni-nav-next))
+modified: 20220529211053397
+omni-shortcut: yep
+tags: 
+title: $:/plugins/can/omni/kbshortcuts/omni-nav-next
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/can/omni/shortcut-actions
+
+<<omni-nav-next>>

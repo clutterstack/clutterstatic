@@ -1,0 +1,32 @@
+created: 20220529181610475
+creator: chris
+modified: 20220530014442891
+modifier: chris
+omni-list: 
+omnibus-mode: kbnav
+publishdate: 20220529181610475
+published: false
+savetitle: 20220529205947018
+tags: 
+title: How hard is it to export a basic static site with TiddlyWiki?
+type: text/vnd.tiddlywiki
+
+There are a billion things I'd like to tweak to make TiddlyWiki my ideal static site generator, and a few reasons why I think it's a great candidate. But what is the actual best starting point? 
+
+To me, this question is intertwined with the TiddlyWiki layout mechanism, which involves a cascade of template tiddlers, with each triggering the next level down, which is labyrinthine and always had me thinking that to personalize my own site or wiki, I'd like to wipe it out completely and start from scratch to see if I can simplify it. But that's, of course, not //actually// a recipe for a simpler life. 
+
+The cascade of templates has had a recent(ish) massage, integrating a new, explicit [[cascade mechanism |https://tiddlywiki.com/#Cascades]] using the [[cascade|https://tiddlywiki.com/#Cascade%20Filter%20Run%20Prefix]] filter run prefix.
+
+It makes a lot of sense to see if this saves reproducing the work in the default template tiddlers.
+
+But before getting immersed in layout, I need to get my head around what's going on when TiddlyWiki exports content.
+
+[[Ways to export tiddlers]]
+
+[[Template tiddlers]]
+
+[[What if I export this wiki with the StaticRiver exporter right now?]]
+
+[[How did "export all" work?]]
+
+[[So what to do first?]]

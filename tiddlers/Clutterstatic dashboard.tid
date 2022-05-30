@@ -1,0 +1,6 @@
+created: 20220530015710062
+modified: 20220530021935139
+title: Clutterstatic dashboard
+type: text/vnd.tiddlywiki
+
+Export open tiddlers in one page: <$macrocall $name="exportButton" exportFilter="[list[$:/StoryList]]" baseFilename="index"/>

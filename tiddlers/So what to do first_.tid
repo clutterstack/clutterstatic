@@ -1,0 +1,14 @@
+created: 20220530014328793
+modified: 20220530021818049
+title: So what to do first?
+type: text/vnd.tiddlywiki
+
+Before I upload the first "edition" of a static site made from this wiki, I want, at least, to choose which tiddlers are included. I'm going to start a rudimentary dashboard for that ([[Clutterstatic dashboard]]).
+
+All it contains today is one button that exports the open tiddlers to a single `index.html` page. Here's what the WikiText looks like for that:
+
+```
+Export open tiddlers in one page: <$macrocall $name="exportButton" exportFilter="[list[$:/StoryList]]" baseFilename="index"/>
+```
+
+Tasks on deck: add a header with a title; get local tiddler links working (meaning: export tiddlers to their own pages).

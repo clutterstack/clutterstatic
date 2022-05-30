@@ -1,0 +1,12 @@
+created: 20220529191736485
+key: ((omni-kb-edit))
+modified: 20220529211053397
+omni-shortcut: yep
+tags: 
+title: $:/plugins/can/omni/kbshortcuts/omni-kb-edit
+type: text/vnd.tiddlywiki
+
+\import $:/plugins/can/omni/shortcut-actions
+\import $:/plugins/can/omni/component-state-defs
+
+<<omni-kb-startedit-actions>>
